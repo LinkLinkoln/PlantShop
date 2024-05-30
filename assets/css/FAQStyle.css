@@ -1,0 +1,345 @@
+
+  @font-face {
+    font-family: 'Bahnschrift';
+    src: url('assets/fonts/Bahnschrift.ttf') format('truetype');
+  }
+  .FAQWindow{
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .btnClose{
+    height: 60px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 15px;
+    color: red
+
+  }
+
+  .FAQModalClass{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .FAQ_modal_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rounded-rectangle {
+    border: 5px solid #a5abaf;
+    width: 87%;
+    height: 87%;
+    max-height: 760px;
+    object-fit: contain;
+    background-color: #f3f3f3;
+    border-radius: 45px;
+    border-color: #d8d8d8;
+    font-family: "Bahnschrift";
+    font-weight: 100;
+    color: #393939;
+  }
+  
+  .FAQBar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+  }
+
+ 
+  .FAQInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 55%;
+    height: 81%;
+    margin-left: 25px;
+    background-color: white;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .FAQInfo img{
+    height: 70px;
+    object-fit: contain;
+    margin-left: 3.7%;
+    margin-top: 1.75%;
+  }
+
+  .FAQInfoHeader{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .FAQInfoH1{
+    color: #414143;
+    font-size: 22px;
+    margin-top: 3%;
+    max-width: 90%;
+  }
+
+  .FAQInfoH2{
+    color: #adaeb5;
+    font-size: 18px;
+  }
+
+  .FAQSectionInformation{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .Flower{
+    margin-bottom: 2%;
+  }
+  .FlowersFAQ{
+    width: 100%;
+    height: 100%;
+  }
+
+  .FAQDesignLine{
+    padding-bottom: 0.3%;
+    background-color: #f3f3f3;
+    object-fit: contain;
+    width: 95%;
+    height: 1%;
+    background-color: #e2e2e2;
+  }
+
+  .FlowerFAQH1{
+    color: #9898b7;
+    font-size: 24px;
+
+  }
+
+  .FlowerFAQText{
+    width: 100%;
+    height: 75%;
+    max-width: 95%;
+    font-size: 19px;
+    color: #6b6b6b;
+    }
+
+
+
+  .FAQHeader{
+    font-size: 50px;
+    margin-top: 2.9%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .header-buttonsFAQ {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .header-buttonsFAQ img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-top: 10px;
+  }
+  .FAQButtonsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 86%;
+    max-width: 430px;
+    margin-left: 6%;
+  }
+
+  .faq-button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 18.5%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    font-family: "Bahnschrift";
+    font-weight: normal;
+    text-align:left;
+    line-height: 1;
+    margin-bottom: 10%;
+  }
+  
+  .ButtonH1{
+    color: #414143;
+    font-size: 26px;
+    margin-left: 2.7%;
+  }
+
+  .ButtonH2{
+    color: #adaeb5;
+    font-size: 20px;
+    padding-left: 19%;
+    margin-top: -5%;
+  }
+  
+  .faq-button img{
+  width: 65px;
+  height: 65px;
+  }
+
+  .faq-button:hover {
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+
+  @media (max-width: 1250px), (max-height: 795px) {
+    .FAQInfo{
+      width: 130%;
+      height: 75%;
+      margin-right: 2%;
+    }
+    .FAQInfoH1{
+      font-size: 140%;
+      max-width: 90%;
+    }
+    .FAQInfoH2{
+      max-width: 90%;
+      font-size: 120%;
+    }
+    .FAQButtonsContainer{
+      margin-left: 2%;
+    }
+    .faq-button{
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    .ButtonH1{
+      font-size: 20px;
+    }
+    .ButtonH2{
+      font-size: 16px;
+      margin-top: -8%;
+    }
+    .FlowerFAQH1{
+      font-size: 20px;
+    }
+    .FlowerFAQText{
+      width: 100%;
+      height: 75%;
+      max-width: 95%;
+      font-size: 16px;
+      color: #6b6b6b;
+      }
+  }  
+  @media (max-width: 1216px), (max-height: 680px) {
+    .FAQInfoH1{
+      font-size: 140%;
+      max-width: 90%;
+    }
+    .FAQInfoH2{
+      max-width: 90%;
+      font-size: 90%;
+    }
+    .FlowerFAQH1{
+      font-size: 18px;
+    }
+    .FlowerFAQText{
+      font-size: 15px;
+    }
+    .FAQInfo-image{
+      width: 40px;
+    }
+    .FAQSectionInformation{
+      margin-top: -10px;
+    }
+  }  
+
+  @media (max-width: 900px) {
+    .rounded-rectangle{
+      overflow: auto;
+    }
+    .FAQBar {
+      flex-direction: column-reverse;
+      align-items: center;
+      height: auto;
+    }
+    .FAQHeader{
+      width: 100%;
+      font-size: 22px;
+    }
+    .FAQ_text {
+      height: auto;
+      margin-top: 15px;
+    }
+    .FAQInfo {
+      width: 100%;
+      max-width: 430px;
+      margin: 0;
+    }
+    .FAQInfoHeader {
+      flex-wrap: nowrap;
+    }
+    .FAQInfo-image{
+      width: 60px;
+    }
+    .FAQInfo .FAQInfo-image {
+      height: 100px;
+    }
+    .faq-button {
+      height: auto;
+      margin-bottom: 1%;
+    } 
+    .ButtonH2 {
+      margin-top: -5.5%;
+    }
+    .FAQButtonsContainer {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    .FAQInfoH1 {
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+    .FAQInfoH2 {
+      margin-left: 5px;
+      margin-top: auto;
+      padding-left: 0;
+    }
+    
+  }
+  @media (max-width: 450px) {
+    .ButtonH2{
+      display: none;
+    }
+    .ButtonH1{
+      font-size: 15px;
+    }
+    .faq-button {
+      height: 10%;
+      margin-bottom: 1%;
+    } 
+    .faq-button img{
+      width: 40px;
+      height: 40px;
+    }
+    .btnClose{
+      margin-right: 15px;
+    }
+  }
+  

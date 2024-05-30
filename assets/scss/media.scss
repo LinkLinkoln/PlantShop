@@ -1,0 +1,1104 @@
+@media screen and (max-width: 460px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+
+   .mobile-menu {
+    display: block;
+   }
+   .change-theme__text {
+    display: none;
+   }
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+      
+    .products-items {
+    flex-flow: wrap;
+    }
+
+    .product-item {
+    width: calc( 100% / 2.1 );
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    }
+
+    .product-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .buy-plants-wrapper {
+        flex-flow: wrap;
+    }
+    .buy-plants-item {
+        width: 100%;
+    }
+    .buy-plants__title {
+        font-size: 22px;
+    }
+    .buy-plants__text {
+        font-size: 14px;
+    }
+    .buy-plants__top {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .buy-plants-image {
+        img {
+            max-width: 100%;
+        }
+        
+    }
+    .plants-banner-wrap {
+        flex-flow: wrap;
+    }
+    .plants-banner__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .plants-banner__content {
+        margin-top: 15px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .plants-banner__title {
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .footer-wrap {
+        flex-flow: wrap;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+    .mobile-menu {
+        display: block;
+       }
+       .change-theme__text {
+        display: none;
+       }
+    
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+      
+    .products-items {
+    flex-flow: wrap;
+    }
+
+    .product-item {
+    width: calc( 100% / 2.1 );
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    }
+
+    .product-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .buy-plants-wrapper {
+        flex-flow: wrap;
+    }
+    .buy-plants-item {
+        width: 100%;
+    }
+    .buy-plants__title {
+        font-size: 22px;
+    }
+    .buy-plants__text {
+        font-size: 14px;
+    }
+    .buy-plants__top {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .buy-plants-image {
+        img {
+            max-width: 100%;
+        }
+        
+    }
+    .plants-banner-wrap {
+        flex-flow: wrap;
+    }
+    .plants-banner__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .plants-banner__content {
+        margin-top: 15px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .plants-banner__title {
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .footer-wrap {
+        flex-flow: wrap;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+    .mobile-menu {
+        display: block;
+       }
+       .change-theme__text {
+        display: none;
+       }
+    
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+      
+    .products-items {
+    flex-flow: wrap;
+    }
+
+    .product-item {
+    width: calc( 100% / 2.1 );
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    }
+
+    .product-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .buy-plants-wrapper {
+        flex-flow: wrap;
+    }
+    .buy-plants-item {
+        width: 100%;
+    }
+    .buy-plants__title {
+        font-size: 22px;
+    }
+    .buy-plants__text {
+        font-size: 14px;
+    }
+    .buy-plants__top {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .buy-plants-image {
+        img {
+            max-width: 100%;
+        }
+        
+    }
+    .plants-banner-wrap {
+        flex-flow: wrap;
+    }
+    .plants-banner__image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .plants-banner__content {
+        margin-top: 15px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .plants-banner__title {
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .footer-wrap {
+        flex-flow: wrap;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+
+   .mobile-menu {
+    display: block;
+   }
+   .change-theme__text {
+    display: none;
+   }
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .mobile-nav {
+        transform: translateX(200vw);
+    }
+     
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+     
+    .products-items {
+        flex-flow: wrap;
+        }
+    
+        .product-item {
+        width: calc( 100% / 2.1 );
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        }
+    
+        .product-item__image {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .buy-plants-wrapper {
+            flex-flow: wrap;
+        }
+        .buy-plants-item {
+            width: 100%;
+        }
+        .buy-plants__title {
+            font-size: 22px;
+        }
+        .buy-plants__text {
+            font-size: 14px;
+        }
+        .buy-plants__top {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-plants-image {
+            img {
+                max-width: 100%;
+            }
+            
+        }
+        .buy-plants__right {
+            text-align: start;
+        }
+        .plants-banner-wrap {
+            flex-flow: wrap;
+        }
+        .plants-banner__image {
+            img {
+                max-width: 100%;
+            }
+        }
+        .plants-banner__content {
+            margin-top: 15px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+        }
+        .plants-banner__title {
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .plants-banner__image {
+            text-align: center;
+            width: 100%;
+        }
+        .footer-wrap {
+            flex-flow: wrap;
+        }
+        .footer-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+
+   .mobile-menu {
+    display: block;
+   }
+   .change-theme__text {
+    display: none;
+   }
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .mobile-nav {
+        transform: translateX(200vw);
+    }
+     
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+     
+    .products-items {
+        flex-flow: wrap;
+        }
+    
+        .product-item {
+        width: calc( 100% / 2.1 );
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        }
+    
+        .product-item__image {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .buy-plants-wrapper {
+            flex-flow: wrap;
+        }
+        .buy-plants-item {
+            width: 100%;
+        }
+        .buy-plants__title {
+            font-size: 22px;
+        }
+        .buy-plants__text {
+            font-size: 14px;
+        }
+        .buy-plants__top {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-plants-image {
+            img {
+                max-width: 100%;
+            }
+            
+        }
+        .buy-plants__right {
+            text-align: start;
+        }
+        .plants-banner-wrap {
+            flex-flow: wrap;
+        }
+        .plants-banner__image {
+            img {
+                max-width: 100%;
+            }
+        }
+        .plants-banner__content {
+            margin-top: 15px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+        }
+        .plants-banner__title {
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .plants-banner__image {
+            text-align: center;
+            width: 100%;
+        }
+        .footer-wrap {
+            flex-flow: wrap;
+        }
+        .footer-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (max-width: 870px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+
+   .mobile-menu {
+    display: block;
+   }
+   .change-theme__text {
+    display: none;
+   }
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .mobile-nav {
+        transform: translateX(200vw);
+    }
+     
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+     
+    .products-items {
+        flex-flow: wrap;
+        }
+    
+        .product-item {
+        width: calc( 100% / 2.1 );
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        }
+    
+        .product-item__image {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .buy-plants-wrapper {
+            flex-flow: wrap;
+        }
+        .buy-plants-item {
+            width: 100%;
+        }
+        .buy-plants__title {
+            font-size: 22px;
+        }
+        .buy-plants__text {
+            font-size: 14px;
+        }
+        .buy-plants__top {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-plants-image {
+            img {
+                max-width: 100%;
+            }
+            
+        }
+        .buy-plants__right {
+            text-align: start;
+        }
+        .plants-banner-wrap {
+            flex-flow: wrap;
+        }
+        .plants-banner__image {
+            img {
+                max-width: 100%;
+            }
+        }
+        .plants-banner__content {
+            margin-top: 15px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+        }
+        .plants-banner__title {
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .plants-banner__image {
+            text-align: center;
+            width: 100%;
+        }
+        .footer-wrap {
+            flex-flow: wrap;
+        }
+        .footer-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #156963;
+    }
+
+   .mobile-menu {
+    display: block;
+   }
+   .change-theme__text {
+    display: none;
+   }
+
+    .slider {
+        padding-top: 80px;
+    }
+
+    .header-buttons__item--mobile {
+        display: none;;
+    }
+
+    .slider-item__image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .slider-item__content--title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .slider-item__content--text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    .slider-buttons {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .itc-slider-btn {
+        width: 130px;
+    height: 65px;
+    font-size: 11px;
+    line-height: 8px;
+    }
+
+
+    .slider__btn--icon {
+        svg {
+            width: 11px;
+        }
+    }
+
+    .slider-name {
+        display: none;
+    }
+
+    .slider-item__content {
+        padding-left: 10px;
+    }
+    .mobile-nav {
+        transform: translateX(200vw);
+    }
+     
+    .features-items {
+        flex-flow: wrap;
+    }
+
+
+    .features-item {
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+     
+    .products-items {
+        flex-flow: wrap;
+        }
+    
+        .product-item {
+        width: calc( 100% / 2.1 );
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        }
+    
+        .product-item__image {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .buy-plants-wrapper {
+            flex-flow: wrap;
+        }
+        .buy-plants-item {
+            width: 100%;
+        }
+        .buy-plants__title {
+            font-size: 22px;
+        }
+        .buy-plants__text {
+            font-size: 14px;
+        }
+        .buy-plants__top {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-plants-image {
+            img {
+                max-width: 100%;
+            }
+            
+        }
+        .buy-plants__right {
+            text-align: start;
+        }
+        .plants-banner-wrap {
+            flex-flow: wrap;
+        }
+        .plants-banner__image {
+            img {
+                max-width: 100%;
+            }
+        }
+        .plants-banner__content {
+            margin-top: 15px;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+        }
+        .plants-banner__title {
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .plants-banner__image {
+            text-align: center;
+            width: 100%;
+        }
+        .footer-wrap {
+            flex-flow: wrap;
+        }
+        .footer-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        z-index: 9999;
+        top: 50%;
+    }
+}

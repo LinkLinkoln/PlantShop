@@ -1,0 +1,183 @@
+// Общие стили
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000;
+    &.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+    }
+    &.dark-theme {
+        background-color: #121212;
+        color: #ffffff;
+        .features-item__text {
+            color: #fff;
+        }
+        .product-item__link {
+            color: #fff;
+        }
+        .buy-plants__title {
+            color: #fff;
+        }
+        .buy-plants__text {
+            color: #fff;
+        }
+        .slider-item__content--title {
+            color: #fff;
+        }
+        .slider-item__content--text {
+            color: #fff;
+        }
+        .prev-btn {
+            color: #fff;
+        }
+        .footer-name {
+            color: #fff;
+        }
+        .footer-location {
+            color: #fff;
+        }
+        .footer-address {
+            color: #fff;
+        }
+        .footer-list__link {
+            color: #fff;
+        }
+        .change-theme__text {
+            color: #fff;
+        }
+    }
+}
+
+.change-theme {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.change-theme__text {
+    padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+    z-index: 9999;
+ }
+ 
+ .modal-title {
+    color: #156963;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+ }
+ 
+.reg-form__item {
+    margin-bottom: 15px;
+    input {
+        border: 1px solid #F2F2F2;
+  height: 32px;
+  padding-left: 13px;
+    }
+    button {
+        background: #156963;
+  width: 135px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  border: none;
+    }
+}
+
+
+
+ /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+ 
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+
+// Подключаемые файлы
+
+@import 'normalize.scss';
+@import 'header.scss';
+@import 'content.scss';
+@import 'media.scss';
