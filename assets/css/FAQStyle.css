@@ -187,13 +187,14 @@
   
   .ButtonH1{
     color: #414143;
-    font-size: 26px;
+    font-size: 24px;
     margin-left: 2.7%;
+    max-width: 80%;
   }
 
   .ButtonH2{
     color: #adaeb5;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 19%;
     margin-top: -5%;
   }
@@ -236,6 +237,7 @@
     }
     .ButtonH1{
       font-size: 20px;
+      max-width: 75%;
     }
     .ButtonH2{
       font-size: 16px;
@@ -265,7 +267,7 @@
       font-size: 18px;
     }
     .FlowerFAQText{
-      font-size: 15px;
+      font-size: 17px;
     }
     .FAQInfo-image{
       width: 40px;
@@ -309,6 +311,7 @@
     .faq-button {
       height: auto;
       margin-bottom: 1%;
+
     } 
     .ButtonH2 {
       margin-top: -5.5%;
@@ -328,7 +331,7 @@
     }
     
   }
-  @media (max-width: 450px) {
+  @media (max-width: 470px) {
     .ButtonH2{
       display: none;
     }
