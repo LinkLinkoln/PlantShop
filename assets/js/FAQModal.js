@@ -6,7 +6,7 @@ var btn = document.getElementById("FAQButton");
 var span = document.getElementsByClassName("btnClose")[0];
 
 btn.onclick = function() {
-  modal.style.display = "flex";e;
+  modal.style.display = "flex";
 }
 
 span.onclick = function() {
@@ -88,11 +88,7 @@ const contentData = {
     HeaderH1: 'Как долго будут свежими купленные цветы?',
     HeaderH2: 'Узнайте сроки хранения наших растений',
     Code: `
-    <h2>Информация для кнопки 1</h2>
-    <p>
-      Это может быть текст с 
-      <span class="custom-text">особым стилем</span>.
-    </p>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad02e9532d33d20dfa605f98e3cb4488f69cb90d8985d3b9778658ba505fe9e0a&amp;width=539&amp;height=458&amp;lang=ru_RU&amp;scroll=true"></script>
     `
   },
   PackageFaqContent: {

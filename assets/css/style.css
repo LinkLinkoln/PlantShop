@@ -71,6 +71,12 @@ body.dark-theme .FlowerFAQText{
 body.dark-theme .FAQInfoH1{
   color: white;
 }
+body.dark-theme .search{
+  filter: invert(100%);
+}
+body.dark-theme .cart{
+  filter: invert(100%);
+}
 
 .change-theme {
   background: none;
@@ -135,6 +141,22 @@ body.dark-theme .FAQInfoH1{
 .reg-form__item {
   margin-bottom: 15px;
 }
+.reg-form__item:nth-child(5) {
+  margin-bottom: 15px;
+  width: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  border: 1px solid #F2F2F2;
+  opacity: 0.7;
+}
+.reg-form__item:nth-child(5) input {
+  width: 100px;
+  border:none;
+}
 .reg-form__item input {
   border: 1px solid #F2F2F2;
   height: 32px;
@@ -150,12 +172,39 @@ body.dark-theme .FAQInfoH1{
   font-weight: 500;
   border: none;
 }
-
+.Birthday__error,.Email__error,.Email__unique,.Password__error,.Password__unique,.RePassword__error,.Phone__error,.Phone__unique,.SignIn__error{
+  height: 0;
+  opacity: 0;
+  transition: height 0.6s, opacity 0.6s;
+}
+.Birthday__error.open,.Email__error.open,.Email__unique.open,.Password__error.open,.Password__unique.open,.RePassword__error.open,.Phone__error.open,.Phone__unique.open,.SignIn__error.open{
+  height: 30px;
+  color:red;
+  opacity: 1;
+}
+.reg {
+  display: none;
+}
+.reg.submit{
+  display: block;
+  background: #156963;
+  width: 135px;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  border: none;
+}
 /* Стили для активных классов подложки и окна */
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+.sign-in{
+  display: block;
 }
 
 /* Стили для кнопки закрытия */
@@ -977,6 +1026,28 @@ template {
   line-height: 14px;
   font-weight: 500;
   border: none;
+}
+
+.header-ChangeLanguage {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.header-ChangeLanguage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-top: 10px;
+}
+.header-ChangeLanguage button{
+  height: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: -9px;
+
 }
 
 @media screen and (max-width: 460px) {
