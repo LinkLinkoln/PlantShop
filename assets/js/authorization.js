@@ -27,33 +27,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     localStorage.setItem('isUserRegistered', isUserRegistered);
   });
+  
+});
 
-  const logOutElement = document.querySelector('.log-out');
-  logOutElement.addEventListener('click', (event) => {
+const logOutElement = document.querySelectorAll('.log-out');
+logOutElement.forEach(function(element) {
+  element.addEventListener('click', (event) => {
     localStorage.removeItem('isUserRegistered');
     window.location.href = "/index.html";
   });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const NonRegElements = Array.from(document.querySelectorAll('[id="NonRegUser"]'));
-    const RegElements = Array.from(document.querySelectorAll('[id="RegUser"]'));
-
-    const isUserRegistered = localStorage.getItem('isUserRegistered');
-
-    if (isUserRegistered === 'true') {
-      NonRegElements.forEach(element => {
-        element.style.display = "none";
-      });
-      RegElements.forEach(element => {
-        element.style.display = "block";
-      });
-    } else {
-      NonRegElements.forEach(element => {
-        element.style.display = "block";
-      });
-      RegElements.forEach(element => {
-        element.style.display = "none";
-      });
-    }
-  });
 });
+
+window.onload = () => {
+  const NonRegElements = Array.from(document.querySelectorAll('[id="NonRegUser"]'));
+  const RegElements = Array.from(document.querySelectorAll('[id="RegUser"]'));
+
+  const isUserRegistered = localStorage.getItem('isUserRegistered');
+
+  if (isUserRegistered === 'true') {
+    NonRegElements.forEach(element => {
+      element.style.display = "none";
+    });
+    RegElements.forEach(element => {
+      element.style.display = "flex";
+    });
+  } else {
+    NonRegElements.forEach(element => {
+      element.style.display = "flex";
+    });
+    RegElements.forEach(element => {
+      element.style.display = "none";
+    });
+  }
+};

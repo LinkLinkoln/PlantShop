@@ -77,6 +77,37 @@ body.dark-theme .search{
 body.dark-theme .cart{
   filter: invert(100%);
 }
+body.dark-theme .mobile-menu {
+  filter: invert(100%);
+
+}
+body.dark-theme .mobile-nav.active{
+  color: #111112;
+  background-color: #111112; /* White */
+}
+body.dark-theme .following{
+  background-color: #111112;
+  border-left: black;
+  border-right: black;
+}
+body.dark-theme .following-link{
+  color: white;
+}
+body.dark-theme .review-item{
+  background-color: #151515;
+}
+body.dark-theme .modal{
+  border: 2px solid white;
+  background-color: #111112;
+}
+
+@media (max-width: 900px) {
+  body.dark-theme header {
+    color: #111112;
+    background-color: #111112;
+  }
+}
+
 
 .change-theme {
   background: none;
@@ -92,6 +123,10 @@ body.dark-theme .cart{
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.backButton img{
+width: 30px;
 }
 
 .overlay {
@@ -117,7 +152,7 @@ body.dark-theme .cart{
   max-width: 500px;
   /*  Центрируем и задаем z-index */
   position: fixed;
-  top: 25%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
@@ -556,6 +591,11 @@ template {
 .header-buttons {
   display: flex;
   align-items: center;
+}
+.mobile-menu img{
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
 }
 
 .header-buttons__item {
@@ -1832,7 +1872,6 @@ template {
     right: 0;
     z-index: 9999;
     background: #fff;
-    padding: 10px 0;
     border-bottom: 1px solid #156963;
   }
   .mobile-menu {

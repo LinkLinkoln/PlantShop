@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
+
+    <link rel="stylesheet" href="../css/index/following.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel = "stylesheet" href = assets/css/FAQStyle.css>
+    <link rel = "stylesheet" href = assets\css\Reviews.css>
+
+  </head>
+  <body class="red-theme">
+    <header class="header">
+      <!-- Container -->
+      <div class="container">
+        <!-- Header wrap -->
+        <div class="header-wrap">
+          <!-- Logo -->
+          <div class="logo">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5 1.44338C17.047 0.550211 18.953 0.550212 20.5 1.44338L31.0885 7.55662C32.6355 8.44979 33.5885 10.1004 33.5885 11.8868V24.1132C33.5885 25.8996 32.6355 27.5502 31.0885 28.4434L20.5 34.5566C18.953 35.4498 17.047 35.4498 15.5 34.5566L4.91154 28.4434C3.36454 27.5502 2.41154 25.8996 2.41154 24.1132V11.8868C2.41154 10.1004 3.36454 8.44979 4.91154 7.55662L15.5 1.44338Z"
+                fill="#156963"
+              />
+              <path
+                d="M16.2995 22.072C15.9635 22.072 15.6955 21.976 15.4955 21.784C15.3035 21.584 15.2075 21.316 15.2075 20.98V14.56C15.2075 14.232 15.2955 13.98 15.4715 13.804C15.6475 13.628 15.8995 13.54 16.2275 13.54H19.2995C20.2355 13.54 20.9635 13.78 21.4835 14.26C22.0035 14.732 22.2635 15.392 22.2635 16.24C22.2635 17.08 21.9995 17.74 21.4715 18.22C20.9515 18.7 20.2275 18.94 19.2995 18.94H17.4155V20.98C17.4155 21.316 17.3155 21.584 17.1155 21.784C16.9155 21.976 16.6435 22.072 16.2995 22.072ZM18.9995 17.284C19.4075 17.284 19.7075 17.2 19.8995 17.032C20.0995 16.864 20.1995 16.604 20.1995 16.252C20.1995 15.556 19.7995 15.208 18.9995 15.208H17.4155V17.284H18.9995Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="header-buttons">
+            <button id="themeToggle" class="change-theme">
+              <div class="change-theme__icon">
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 900.000000 980.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)"
+                    fill="#156963"
+                    stroke="none"
+                  >
+                    <path
+                      d="M4635 9778 c-162 -119 -1893 -1456 -2122 -1640 -178 -143 -189 -114
+                       145 -380 273 -217 351 -277 734 -575 192 -149 293 -227 632 -488 408 -312 632
+                       -475 657 -475 15 0 38 11 54 27 22 23 26 34 22 64 -5 40 -150 427 -299 804
+                       -55 138 -109 272 -119 299 l-20 48 258 -6 c573 -16 679 -32 992 -153 495 -190
+                       914 -532 1207 -983 357 -551 466 -1276 292 -1953 -98 -386 -305 -744 -617
+                       -1072 -53 -55 -110 -116 -129 -136 l-33 -36 172 -204 c254 -301 453 -530 488
+                       -563 l30 -29 40 27 c59 41 302 293 425 441 368 443 634 1029 735 1620 36 211
+                       42 275 48 510 19 777 -199 1486 -657 2137 -191 272 -495 581 -775 788 -441
+                       327 -948 545 -1485 639 -205 36 -326 44 -662 44 -181 0 -328 1 -328 3 0 2 68
+                       176 151 386 163 415 275 715 285 764 8 39 -8 69 -49 94 -39 24 -35 24 -72 -2z"
+                    />
+                    <path
+                      d="M1743 7213 c-281 -302 -441 -527 -603 -853 -185 -371 -298 -753 -352
+                       -1195 -20 -166 -17 -654 6 -820 90 -668 334 -1248 739 -1755 472 -592 1106
+                       -1010 1848 -1220 268 -76 471 -103 884 -120 276 -11 365 -18 385 -30 11 -7
+                       -20 -95 -139 -399 -257 -657 -289 -753 -261 -786 24 -28 58 -37 88 -21 142 73
+                       2150 1626 2256 1744 26 29 15 63 -35 112 -94 91 -1278 995 -1979 1511 -268
+                       197 -266 196 -314 158 -25 -19 -27 -26 -20 -63 8 -50 68 -221 159 -451 189
+                       -481 266 -687 260 -694 -9 -8 -330 -6 -505 3 -358 19 -644 96 -970 261 -247
+                       126 -455 281 -655 487 -272 280 -458 591 -579 965 -84 264 -112 481 -102 803
+                       9 297 35 458 111 685 125 373 288 644 572 948 l64 68 -37 42 c-91 103 -696
+                       737 -703 737 -4 0 -57 -53 -118 -117z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </button>
+            <div class="backButton">
+              <a href="index.html">
+                <img src="assets\img\previous.png">
+              </a>
+            </div>
+            <div class="header-buttons__item">
+              <div class="search">
+                <button class="search__btn">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.5 17.5L13.875 13.875"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="cart">
+                <button class="cart__btn">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_0_102)"
+                      <path
+                        d="M7.50002 18.3333C7.96026 18.3333 8.33335 17.9602 8.33335 17.5C8.33335 17.0397 7.96026 16.6666 7.50002 16.6666C7.03978 16.6666 6.66669 17.0397 6.66669 17.5C6.66669 17.9602 7.03978 18.3333 7.50002 18.3333Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.6666 18.3333C17.1269 18.3333 17.5 17.9602 17.5 17.5C17.5 17.0397 17.1269 16.6666 16.6666 16.6666C16.2064 16.6666 15.8333 17.0397 15.8333 17.5C15.8333 17.9602 16.2064 18.3333 16.6666 18.3333Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M0.833313 0.833374H4.16665L6.39998 11.9917C6.47618 12.3754 6.6849 12.72 6.9896 12.9653C7.2943 13.2106 7.67556 13.3409 8.06665 13.3334H16.1666C16.5577 13.3409 16.939 13.2106 17.2437 12.9653C17.5484 12.72 17.7571 12.3754 17.8333 11.9917L19.1666 5.00004H4.99998"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_102">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-menu">
+                <img src="assets/img/menu.png" alt="Menu Icon">
+              </div>
+            </div>
+            <div class="header-buttons__item header-buttons__item--mobile">
+              <div id ="NonRegUser" class="sign-up">
+                <a
+                  href="#"
+                  class="header-buttons__link sign-up--color js-open-modal"
+                  data-modal="1"
+                  >Sign Up</a
+                >
+              </div>
+              <div id = "NonRegUser" class="sign-in">
+                <a
+                  href="#"
+                  class="header-buttons__link sign-in--color js-open-modal sign-in--bg"
+                  data-modal="2"
+                  >Sign In</a
+                >
+              </div>
+              <div id = "RegUser" class="log-out">
+                <a
+                href="#"
+                class="header-buttons__link sign-in--color js-open-modal sign-in--bg"
+                data-modal=""
+                >Log Out</a
+              >
+                </div>
+            </div>
+            <div class="header-buttonsFAQ">
+              <button id="FAQButton" class="FAQWindow">
+                <img src="assets\img\FAQ\faq.png" alt="FAQ Button" />
+              </button>
+            </div>
+            <div class="header-ChangeLanguage">
+              <button id="ChangeLanguageBtn" class="ChangeLanguageButton">
+                <img src="assets\img\united-kingdom.png" alt="FAQ Button" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav class="mobile-nav">
+          <div class="mobile-nav__wrap">
+            <div class="mobile-nav-items">
+              <div class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Главная</a>
+              </div>
+              <div class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Отзывы</a>
+              </div>
+            </div>
+            <div class="mobile-nav-items mobile-nav__output">
+              <div class="mobile-nav__item">
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2">Вход</a>
+              </div>
+              <div class="mobile-nav__item">
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1">Регистрация</a>
+              </div>
+              <div class="mobile-nav__item log-out">
+                <a href="#" id = "RegUser" class="mobile-nav__link">Выход</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <main class = "MainSection">
+      <section class="reviews-image">
+        <div class="reviews-page-info">
+          <img src="assets\img\Reviews\plantsWallpaper.png" alt="Описание картинки">
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="r-text"><p data-i18="ReviewsText"></p></div>
+        <div class="reviews-list">
+          <div class="review-item">
+            <div class="review-person">
+              <div class="person-info">
+                <img
+                  class="person-photo"
+                  id="photo1"
+                  src="assets\img\Reviews\photo1.png"
+                  alt="photo"
+                />
+                <p class="info" id="info1" data-i18="Name1">Helena Grag</p>
+              </div>
+              <div class="stars" id="stars1"></div>
+            </div>
+            <div class="review-description">
+              <p id="description1" data-i18="description1">
+                Amazing shop!!! LU. Bought some hair spray to my daughter and
+                she really appreciate this. Good luck,guys!!!!!
+              </p>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-person">
+              <div class="person-info">
+                <img
+                  class="person-photo"
+                  id="photo2"
+                  src="assets\img\Reviews\photo2.png"
+                  alt="photo"
+                />
+                <p class="info" id="info2" data-i18="Name2"></p>
+              </div>
+              <div class="stars" id="stars2"></div>
+            </div>
+            <div class="review-description">
+              <p id="description2" data-i18="description2">
+                The store has a wide selection of hair care products, including
+                sprays and shampoos. Looks promising but needs more exploration
+                to judge effectiveness
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-paggination">
+          <p class="left-side">&laquo;</p>
+          <p class="left">&lt;</p>
+          <ul class="paggination">
+            <li class="active"><p>1</p></li>
+            <li><p>2</p></li>
+            <li><p>3</p></li>
+            <li><p>4</p></li>
+          </ul>
+          <p class="right">&gt;</p>
+          <p class="right-side">&raquo;</p>
+        </div>
+      </section>
+      <section class="following" id = "RegUser">
+        <div class="following-map">
+          <a data-i18="followingLink" class="following-link"
+            ></a
+          >
+        </div>
+        <div class="follows-photos">
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature1.png" alt="following photo" /><img
+            />
+          </div>
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature2.png" alt="following photo" /><img
+            />
+          </div>
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature3.png" alt="following photo" /><img
+
+            />
+          </div>
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature4.png" alt="following photo" /><img
+            />
+          </div>
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature5.png" alt="following photo" /><img
+            />
+          </div>
+          <div class="photo-item">
+            <img src="assets\img\Reviews\nature6.png" alt="following photo" /><img
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-item">
+            <div class="footer-name">plantku</div>
+            <div class="footer-location">Plantku House</div>
+            <div class="footer-address">
+              Jl. Laksda Adisucipto No.51, Demangan, Kec. <br />
+              Depok, Kota Yogyakarta, Daerah Istimewa <br />
+              Yogyakarta 55282
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-title">Perusahaan</div>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">Tentang Kami</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-title">Produk</div>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">Tanaman</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__link">Tanaman Lain</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-title">Berlangganan Email Kami</div>
+            <div class="footer-form">
+              <form action="#" class="form-footer">
+                <div class="form-footer__item">
+                  <input
+                    class="form-footer__input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Masukan Alamat Email"
+                  />
+                </div>
+                <div class="form-footer__item">
+                  <button type="submit" class="form-footer__btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" data-modal="1">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <div class="modal-title">Sign Up</div>
+      <div class="form-registration">
+        <form action="" class="form-reg">
+          <div class="reg-form__item">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="lastName-inp"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="reg-form__item">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="name-inp"
+              placeholder="Name"
+            />
+          </div>
+          <div class="reg-form__item">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="fatherName-inp"
+              placeholder="Father name"
+            />
+          </div>
+          <div class="reg-form__item">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="nick"
+              placeholder="Nick name"
+            />
+            <div class="reg-form__item">
+              <button class="gen nick">Generate nick</button>
+            </div>
+          </div>
+          <div class="reg-form__item">
+            <p>Birthday</p>
+            <input
+              type="date"
+              name=""
+              id=""
+              class="birthday-inp"
+              placeholder="Birthday"
+            />
+          </div>
+          <div class="Birthday__error">You need to be over 16 y.o</div>
+          <div class="reg-form__item">
+            <input
+              type="phone"
+              name=""
+              id=""
+              class="phone-inp"
+              placeholder="Pone"
+            />
+          </div>
+          <div class="Phone__error">Invalid phone</div>
+          <div class="Phone__unique">This phone is alrady used</div>
+          <div class="reg-form__item">
+            <input
+              type="email"
+              name=""
+              id=""
+              class="email-inp"
+              placeholder="Email"
+            />
+          </div>
+          <div class="Email__error">Invalid email</div>
+          <div class="Email__unique">This email is alrady used</div>
+          <div class="reg-form__item">
+            <input
+              type="password"
+              name=""
+              id=""
+              class="pswd-inp"
+              placeholder="Password"
+            />
+          </div>
+          <div class="reg-form__item">
+            <button class="gen pswd">Generate password</button>
+          </div>
+          <div class="Password__error">Invalid password</div>
+          <div class="Password__unique">This password is alrady used</div>
+          <div class="reg-form__item">
+            <input
+              type="password"
+              name=""
+              id=""
+              class="rpswd-inp"
+              placeholder="Re-enter Password"
+            />
+          </div>
+          <div class="RePassword__error">Passwords must match</div>
+          <div class="reg-form__item register">
+            <button type="submit" class="reg">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal" data-modal="2">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <div class="modal-title">Sign In</div>
+      <div class="form-registration">
+        <form action="" class="form-reg" id="loginForm">
+          <div class="reg-form__item">
+            <input
+              type="text"
+              name="email"
+              id="loginEmail"
+              class="log-in-email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="reg-form__item">
+            <input
+              type="password"
+              name="password"
+              id="loginPassword"
+              class="passwordField"
+              placeholder="Password"
+            />
+          </div>
+          <div class="SignIn__error">Invalid email or password</div>
+          <div class="reg-form__item">
+            <button type="submit" id="submit">Auth</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="FAQModal" class="FAQModalClass">
+      <div class="FAQ_modal_content">
+        <div id="MainModal" class="rounded-rectangle">
+          <div class="FAQHeader">
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+            <button class="btnClose">X</button>
+          </div>
+          <div class="FAQBar">
+            <div class="FAQButtonsContainer">
+              <button
+                class="faq-button"
+                data-content="CactusFaqContent"
+                alt="CactusButton"
+              >
+                <img src="assets/img/FAQ/cactus.png" />
+                <div class="ButtonH1" data-i18="TypesOfFlowerText">
+                  <a
+                    >Какие виды цветов <br />
+                    вы продаете?</a
+                  >
+                </div>
+                <div class="ButtonH2" data-i18="TypesOfFlowerMainText">
+                  <a
+                    >Ознакомьтесь с нашим широким <br />
+                    ассортиментом растений</a
+                  >
+                </div>
+              </button>
+              <button
+                class="faq-button"
+                data-content="TimeFaqContent"
+                alt="TimeButton"
+              >
+                <img src="assets/img/FAQ/hourglass.png" />
+                <div class="ButtonH1" data-i18="TimeText">
+                  <a
+                    >Как долго будут свежими <br />
+                    купленные цветы?</a
+                  >
+                </div>
+                <div class="ButtonH2" data-i18="TimeMainText">
+                  <a>Узнайте сроки хранения <br />наших растений</a>
+                </div>
+              </button>
+              <button
+                id = "RegUser"
+                class="faq-button"
+                data-content="PackageFaqContent"
+                alt="DeliveryButton"
+              >
+                <img src="assets/img/FAQ/package.png" />
+                <div class="ButtonH1" data-i18="DeliveryFAQText">
+                  <a>А что у нас интересного<br />по доставке?</a>
+                </div>
+                <div class="ButtonH2" data-i18="DeliveryFAQMainText">
+                  <a>Узнайте о лучшей доставке<br />страны</a>
+                </div>
+              </button>
+              <button
+                class="faq-button"
+                data-content="CreditCardFaqContent"
+                alt="CreditsButton"
+              >
+                <img src="assets/img/FAQ/credit-card.png" />
+                <div class="ButtonH1" data-i18="PaymentType">
+                  <a
+                    >Какие способы оплаты <br />
+                    вы можете предложить?</a
+                  >
+                </div>
+                <div class="ButtonH2" data-i18="PaymentMainType">
+                  <a
+                    >Выберите удобный способ<br />
+                    оплаты для вас
+                  </a>
+                </div>
+              </button>
+            </div>
+            <div class="FAQInfo">
+              <div class="FAQInfoHeader">
+                <img
+                  src="assets\img\FAQ\cactus.png"
+                  alt=""
+                  class="FAQInfo-image"
+                />
+                <div class="FAQ_text">
+                  <div class="FAQInfoH1" data-i18="PaymentType">
+                  </div>
+                  <div class="FAQInfoH2" data-i18="PaymentMainType">
+                  </div>
+                </div>
+              </div>
+              <div class="FAQSectionInformation">
+                <div class="MapContainer">
+                  <div class="FlowerFAQH1" data-i18="ReviewsModal">
+                    </div>
+                    <a href="reviews.html" class="green-button" data-i18="ReviewsButton" >Go to Target Page</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javaScript/reviews-paginatiion.js"></script>
+    <script src="assets/js/itc-slider.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/FAQModal.js"></script>
+    <script src="assets/js/LanguageChange.js"></script>
+    <script src="assets/js/LanguageChangeBurger.js"></script>
+    <script src="assets/js/Registration.js"></script>
+    <script src="assets/js/authorization.js"></script>
+  </body>
+</html>

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/itc-slider.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel = "stylesheet" href = assets/css/FAQStyle.css>
+    <link rel = "stylesheet" href = assets/css/Reviews.css>
+    <link rel = "stylesheet" href = assets/css/Coockies.css>
   </head>
   <body>
     <!-- Header -->
@@ -157,11 +159,11 @@
                 </button>
               </div>
               <div class="mobile-menu">
-                <span class="mobile-menu__item"></span>
+                <img src="assets/img/menu.png" alt="Menu Icon">
               </div>
             </div>
             <div class="header-buttons__item header-buttons__item--mobile">
-              <div id = "NonRegUser" class="sign-up">
+              <div id ="NonRegUser" class="sign-up">
                 <a
                   href="#"
                   class="header-buttons__link sign-up--color js-open-modal"
@@ -205,21 +207,18 @@
                 <a href="#" class="mobile-nav__link">Главная</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">О нас</a>
-              </div>
-              <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Товары</a>
-              </div>
-              <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Контакты</a>
+                <a href="#" class="mobile-nav__link">Отзывы</a>
               </div>
             </div>
             <div class="mobile-nav-items mobile-nav__output">
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Вход</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2">Вход</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Регистрация</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1">Регистрация</a>
+              </div>
+              <div class="mobile-nav__item log-out">
+                <a href="#" id = "RegUser" class="mobile-nav__link">Выход</a>
               </div>
             </div>
           </div>
@@ -253,9 +252,7 @@
                       Flower Mantap
                     </div>
                     <div class="slider-item__content--text" data-i18="sliderText1">
-                      Lorem Ipsum is simply dummy text of the printing <br />
-                      and typesetting industry. Lorem Ipsum has been the <br />
-                      industry's standard dummy text ever since the 1500s,
+                      Lorem Ipsum is simply dummy text of the printing 1
                     </div>
                   </div>
                 </div>
@@ -266,7 +263,7 @@
                 <div class="slider-item">
                   <div class="slider-item__image">
                     <img
-                      src="assets/img/slider/1.jpg"
+                      src="assets/img/slider/2.png"
                       alt=""
                       class="slider-item__img"
                     />
@@ -276,7 +273,7 @@
                       Kembang <br />
                       Flower Mantap
                     </div>
-                    <div class="slider-item__content--text" data-i18="sliderItemDelivery">
+                    <div class="slider-item__content--text" data-i18="sliderText2">
                       Lorem Ipsum is simply dummy text of the printing <br />
                       and typesetting industry. Lorem Ipsum has been the <br />
                       industry's standard dummy text ever since the 1500s,
@@ -290,7 +287,7 @@
                 <div class="slider-item">
                   <div class="slider-item__image">
                     <img
-                      src="assets/img/slider/1.jpg"
+                      src="assets/img/slider/3.png"
                       alt=""
                       class="slider-item__img"
                     />
@@ -300,7 +297,7 @@
                       Kembang <br />
                       Flower Mantap
                     </div>
-                    <div class="slider-item__content--text">
+                    <div class="slider-item__content--text" data-i18 = "sliderText3">
                       Lorem Ipsum is simply dummy text of the printing <br />
                       and typesetting industry. Lorem Ipsum has been the <br />
                       industry's standard dummy text ever since the 1500s,
@@ -662,7 +659,7 @@
     </div>
 
     <!-- / end buy plants -->
-    <div class="plants-banner">
+    <div id = "RegUser" class="plants-banner">
       <div class="container">
         <div class="plants-banner-wrap">
           <div class="plants-banner__content">
@@ -725,6 +722,7 @@
                 </div>
               </button>
               <button
+                id = "RegUser"
                 class="faq-button"
                 data-content="PackageFaqContent"
                 alt="DeliveryButton"
@@ -772,56 +770,14 @@
                 </div>
               </div>
               <div class="FAQSectionInformation">
-                <div class="FlowersFAQ">
-                  <div class="Flower" alt="Rose">
-                    <div class="FlowerFAQH1" alt="ChangableText" data-i18="RoseText">
-                      <a> Розы </a>
+                <div class="MapContainer">
+                  <div class="FlowerFAQH1" data-i18="ReviewsModal">
                     </div>
-                    <div class="FAQDesignLine"></div>
-                    <div class="FlowerFAQText" data-i18="RoseMainText">
-                        Классика цветочного мира. У нас вы найдете розы
-                        различных расцветок, от нежных пастельных тонов до
-                        насыщенных красных. Мы поставляем розы как местного, так
-                        и импортного производства.
+                    <div class="FlowerFAQText" data-i18 = "ReviewMainText">
                     </div>
-                  </div>
-                  <div class="Flower" alt="Lilii">
-                    <div class="FlowerFAQH1" data-i18="Liliy">
-                      <a> Лилии </a>
+                    <div class="FlowerFAQText" data-i18 = "ReviewMainText2">
                     </div>
-                    <div class="FAQDesignLine"></div>
-                    <div class="FlowerFAQText" data-i18="LiliyMainText" >
-                      <a>
-                        Великолепные цветы с завораживающей формой и насыщенным
-                        ароматом. В продаже лилии Ориентальные, Азиатские,
-                        Трубчатые и другие разновидности.
-                      </a>
-                    </div>
-                  </div>
-                  <div class="Flower" alt="Gwozdiki">
-                    <div class="FlowerFAQH1" data-i18="GwozdikiText">
-                      <a> Гвоздики </a>
-                    </div>
-                    <div class="FAQDesignLine"></div>
-                    <div class="FlowerFAQText" data-i18="GwozdikiMainText">
-                      <a>
-                        Яркие, долговечные цветы, широко используемые в букетах
-                        и композициях. Мы предлагаем классические гвоздики, а
-                        также необычные сорта с махровыми и крупными цветками.
-                      </a>
-                    </div>
-                  </div>
-                  <div class="Flower" alt="Tulpanu">
-                    <div class="FlowerFAQH1" data-i18="TyplanText">
-                      <a> Тюльпаны </a>
-                    </div>
-                    <div class="FAQDesignLine"></div>
-                    <div class="FlowerFAQText" data-i18="TyplanMainText">
-                      <a>
-                        Весенние цветы с широкой палитрой цветов, от нежных
-                        пастельных до насыщенных ярких оттенков.
-                      </a>
-                    </div>
+                    <a href="reviews.html" class="green-button" data-i18="ReviewsButton" >Go to Target Page</a>
                   </div>
                 </div>
               </div>
@@ -1042,7 +998,14 @@
         </form>
       </div>
     </div>
-    <div class="overlay js-overlay-modal"></div>
+
+    <div id="cookieModal" class="modalCoockie">
+      <div class="modalCoockie-content">
+        <span class="close-button">&times;</span>
+        <h2>Файлы cookie</h2>
+        <div id="cookieInfo"></div>
+      </div>
+    </div>
 
     <script src="assets/js/itc-slider.min.js"></script>
     <script src="assets/js/scripts.js"></script>

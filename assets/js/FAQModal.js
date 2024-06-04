@@ -97,7 +97,15 @@ const contentData = {
     </div>
     `,
     Code: `
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad02e9532d33d20dfa605f98e3cb4488f69cb90d8985d3b9778658ba505fe9e0a&amp;width=539&amp;height=458&amp;lang=ru_RU&amp;scroll=true"></script>
+    <div class="MapContainer">
+    <div class="FlowerFAQH1" data-i18="ReviewsModal">
+      </div>
+      <div class="FlowerFAQText" data-i18 = "ReviewMainText">
+      </div>
+      <div class="FlowerFAQText" data-i18 = "ReviewMainText2">
+      </div>
+      <a href="reviews.html" class="green-button" data-i18="ReviewsButton" >Go to Target Page</a>
+    </div>
     `
   },
   PackageFaqContent: {
@@ -108,7 +116,25 @@ const contentData = {
     <div class="FAQInfoH2" data-i18="DeliveryFAQMainText">
     </div>
     `,
-    Code: '<h2>Информация для кнопки 3</h2>'
+    Code: `
+    <div class="MapContainer">
+    <div class="ButtonH1" data-i18="LocationText">
+      <a
+        >А мы тут! Нас легко найти!
+        </a
+      >
+    </div>
+    <div class="GoogleMap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.334173574588!2d30.341416012611887!3d53.
+      908037432433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d051e21c08086b%3A0x342bdbdd2dc821f8!2z0JHQtdC70L7RgNGD0YHRgdC60L4t0KDQvt
+      GB0YHQuNC50YHQutC40Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sby!4v1717509837236!5m2!1sru!2sby" width="600" height="450" style="border:0;" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="OrderButtonClass">
+      <button class="order-button" data-i18="OrderButton">Order Now</button>
+    </div>
+  </div>
+    `
   },
   
   CreditCardFaqContent: {
@@ -119,9 +145,29 @@ const contentData = {
     <div class="FAQInfoH2" data-i18="PaymentMainType">
     </div>
     `,
-    Code: '<h2>Информация для кнопки 4</h2>'
+    Code: `
+    <div class="MapContainer">
+    <div class="FlowerFAQH1" data-i18="ReviewsModal">
+      </div>
+      <div class="FlowerFAQText" data-i18 = "ReviewMainText">
+      </div>
+      <div class="FlowerFAQText" data-i18 = "ReviewMainText2">
+      </div>
+      <a href="reviews.html" class="green-button" data-i18="ReviewsButton" >Go to Target Page</a>
+    </div>
+    `
+  
+    
   }
 };
+
+window.addEventListener('DOMContentLoaded', () => {
+  const contentKey = "CactusFaqContent";
+  const content = contentData[contentKey];
+  headerIcon.src = content.SectionImage;
+  FAQText.innerHTML = content.FAQMainText;
+  outputWindow.innerHTML = content.Code;
+});
 
 
 buttons.forEach(button => {
@@ -135,3 +181,5 @@ buttons.forEach(button => {
     switchLanguage();
   });
 });
+
+

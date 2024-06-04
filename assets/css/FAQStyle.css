@@ -159,6 +159,12 @@
     object-fit: contain;
     padding-top: 10px;
   }
+  .header-buttonsFAQ img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-top: 10px;
+  }
   .FAQButtonsContainer{
     display: flex;
     flex-direction: column;
@@ -184,6 +190,7 @@
     line-height: 1;
     margin-bottom: 10%;
   }
+
   
   .ButtonH1{
     color: #414143;
@@ -208,11 +215,46 @@
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
   }
 
-  #map {
+  .MapContainer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: 100%;
+  }
+  .OrderButtonClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  iframe{
+    margin-top: 15px;
+    width: 95%;
+    height: 400px;
+  }
+  .order-button {
+    width: 40%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media (max-height: 877px) {
+    iframe{
+      width: 95%;
+      height: 300px;
+    }
+  }
+  @media (max-height: 781px) {
+    iframe{
+      width: 95%;
+      height: 240px;
+    }
+  }
 
   @media (max-width: 1250px), (max-height: 795px) {
     .FAQInfo{
@@ -252,7 +294,7 @@
       max-width: 95%;
       font-size: 16px;
       color: #6b6b6b;
-      }
+    }
   }  
   @media (max-width: 1216px), (max-height: 680px) {
     .FAQInfoH1{
