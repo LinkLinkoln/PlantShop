@@ -198,21 +198,21 @@
           <div class="mobile-nav__wrap">
             <div class="mobile-nav-items">
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Главная</a>
+                <a href="#" class="mobile-nav__link" data-i18="NavMain">Главная</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Отзывы</a>
+                <a href="#" class="mobile-nav__link" data-i18="NavReviews">Отзывы</a>
               </div>
             </div>
             <div class="mobile-nav-items mobile-nav__output">
               <div class="mobile-nav__item">
-                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2">Вход</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2" data-i18="NavLogIn">Вход</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1">Регистрация</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1" data-i18="NavSignUp">Регистрация</a>
               </div>
               <div class="mobile-nav__item log-out">
-                <a href="#" id = "RegUser" class="mobile-nav__link">Выход</a>
+                <a href="#" id = "RegUser" class="mobile-nav__link" data-i18="NavLogOut">Выход</a>
               </div>
             </div>
           </div>
@@ -265,9 +265,6 @@
             </div>
             <div class="review-description">
               <p id="description2" data-i18="description2">
-                The store has a wide selection of hair care products, including
-                sprays and shampoos. Looks promising but needs more exploration
-                to judge effectiveness
               </p>
             </div>
           </div>
@@ -276,10 +273,13 @@
           <p class="left-side">&laquo;</p>
           <p class="left">&lt;</p>
           <ul class="paggination">
-            <li class="active"><p>1</p></li>
-            <li><p>2</p></li>
-            <li><p>3</p></li>
-            <li><p>4</p></li>
+            <button 
+            class="PaginationButton"
+            data-content="OnePart"
+            ><p>1</p></button>
+            <li class="PaginationButton"><p>2</p></li>
+            <li class="PaginationButton"><p>3</p></li>
+            <li class="PaginationButton"><p>4</p></li>
           </ul>
           <p class="right">&gt;</p>
           <p class="right-side">&raquo;</p>
@@ -636,13 +636,11 @@
         </div>
       </div>
     </div>
-    <script src="../javaScript/reviews-paginatiion.js"></script>
-    <script src="assets/js/itc-slider.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/FAQModal.js"></script>
     <script src="assets/js/LanguageChange.js"></script>
-    <script src="assets/js/LanguageChangeBurger.js"></script>
     <script src="assets/js/Registration.js"></script>
     <script src="assets/js/authorization.js"></script>
+    <script src="assets/jsReviewPagination.js"></script>
   </body>
 </html>

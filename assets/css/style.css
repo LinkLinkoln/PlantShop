@@ -81,6 +81,10 @@ body.dark-theme .mobile-menu {
   filter: invert(100%);
 
 }
+body.dark-theme .choice-form{
+  color: white;
+  background-color: white;
+}
 body.dark-theme .mobile-nav.active{
   color: #111112;
   background-color: #111112; /* White */

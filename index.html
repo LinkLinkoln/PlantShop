@@ -204,21 +204,21 @@
           <div class="mobile-nav__wrap">
             <div class="mobile-nav-items">
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Главная</a>
+                <a href="#" class="mobile-nav__link" data-i18="NavMain">Главная</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" class="mobile-nav__link">Отзывы</a>
+                <a href="#" class="mobile-nav__link" data-i18="NavReviews">Отзывы</a>
               </div>
             </div>
             <div class="mobile-nav-items mobile-nav__output">
               <div class="mobile-nav__item">
-                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2">Вход</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="2" data-i18="NavLogIn">Вход</a>
               </div>
               <div class="mobile-nav__item">
-                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1">Регистрация</a>
+                <a href="#" id = "NonRegUser" class="mobile-nav__link sign-in--color js-open-modal sign-in--bg" data-modal="1" data-i18="NavSignUp">Регистрация</a>
               </div>
               <div class="mobile-nav__item log-out">
-                <a href="#" id = "RegUser" class="mobile-nav__link">Выход</a>
+                <a href="#" id = "RegUser" class="mobile-nav__link" data-i18="NavLogOut">Выход</a>
               </div>
             </div>
           </div>
@@ -419,7 +419,7 @@
                   </defs>
                 </svg>
               </div>
-              <div class="features-item__title">
+              <div class="features-item__title" data-i18="FastDelivery" >
                 Fast <br />
                 Delivery
               </div>
@@ -447,7 +447,7 @@
                   />
                 </svg>
               </div>
-              <div class="features-item__title">
+              <div class="features-item__title" data-i18="CustomerText">
                 Great Customer <br />
                 Service
               </div>
@@ -490,7 +490,7 @@
                   </defs>
                 </svg>
               </div>
-              <div class="features-item__title">
+              <div class="features-item__title" data-i18="OriginalPlantsText">
                 Original <br />
                 Plants
               </div>
@@ -533,7 +533,7 @@
                   </defs>
                 </svg>
               </div>
-              <div class="features-item__title">
+              <div class="features-item__title" data-i18="AffordablePriceText">
                 Affordable <br />
                 Price
               </div>
@@ -999,15 +999,19 @@
       </div>
     </div>
 
-    <div id="cookieModal" class="modalCoockie">
-      <div class="modalCoockie-content">
-        <span class="close-button">&times;</span>
-        <h2>Файлы cookie</h2>
-        <div id="cookieInfo"></div>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup-content">
+        <h2>Мы используем файлы cookie</h2>
+        <p>Этот сайт использует файлы cookie, чтобы предоставить вам наилучший опыт использования. Нажимая "Принять", вы соглашаетесь на использование файлов cookie.</p>
+        <div class="cookie-popup-buttons">
+          <button id="cookie-accept-btn" class="cookie-accept-btn">Принять</button>
+          <button id="cookie-decline-btn" class="cookie-decline-btn">Отклонить</button>
+        </div>
       </div>
     </div>
 
     <script src="assets/js/itc-slider.min.js"></script>
+    <script src="assets\js\Coockies.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/FAQModal.js"></script>
     <script src="assets/js/LanguageChange.js"></script>
