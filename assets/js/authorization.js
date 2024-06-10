@@ -34,7 +34,7 @@ const logOutElement = document.querySelectorAll('.log-out');
 logOutElement.forEach(function(element) {
   element.addEventListener('click', (event) => {
     localStorage.removeItem('isUserRegistered');
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
   });
 });
 
