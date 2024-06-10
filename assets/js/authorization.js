@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let isUserRegistered = false;
 
     if (userExists) {
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
       isUserRegistered = true;
     } else {
       signInError.classList.add("open");
