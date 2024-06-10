@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     if (regButton.classList.contains("submit")) {
       saveUserData();
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     }
   });
 
