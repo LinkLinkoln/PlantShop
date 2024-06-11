@@ -50,6 +50,8 @@ const i18Obj = {
     OriginalPlantsText: "Origignal Plants",
     AffordablePriceText: "Affordable Price",
     FeaturedPlantsText: "Featured Plants",
+    PaymentMethods: "Question: What payment methods are available at your flower shop?",
+    PaymentMethodMain: "Answer: At our flower shop, we offer the following payment options: Cash. You can pay for your order in cash upon pickup.Credit/Debit Cards. We accept all major credit and debit cards, including Visa, Mastercard, and American Express. Online Payments. You can pay for your order online through our secure payment gateway. Bank Transfer. We also accept payments via bank transfer.",
   },
   ru: {
     sliderText1: "Lorem Ipsum — это просто текст-пустышка 1",
@@ -102,6 +104,9 @@ const i18Obj = {
     OriginalPlantsText: "Оригинальный продукт",
     AffordablePriceText: "Доступные цены",
     FeaturedPlantsText: "Доступные растения",
+    PaymentMethods: "Вопрос: Какие способы оплаты доступны в вашем цветочном магазине?",
+    PaymentMethodMain: "Ответ: В нашем цветочном магазине доступны следующие способы оплаты: Наличные. Вы можете оплатить ваш заказ наличными при получении. Кредитные/дебетовые карты. Мы принимаем основные кредитные и дебетовые карты, такие как Visa, Mastercard, American Express. Онлайн-платежи. Вы можете оплатить ваш заказ онлайн через наш безопасный платежный шлюз. Банковский перевод. Мы также принимаем оплату через банковский перевод.",
+    
   }
 };
 

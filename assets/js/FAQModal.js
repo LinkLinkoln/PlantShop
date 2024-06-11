@@ -146,17 +146,13 @@ const contentData = {
     </div>
     `,
     Code: `
-    <div class="MapContainer">
-    <div class="FlowerFAQH1" data-i18="ReviewsModal">
+      <div class="FlowerFAQH1" data-i18="PaymentMethods">
       </div>
-      <div class="FlowerFAQText" data-i18 = "ReviewMainText">
+      <div class="FlowerFAQText" data-i18 = "PaymentMethodMain">
       </div>
-      <div class="FlowerFAQText" data-i18 = "ReviewMainText2">
-      </div>
-      <a href="reviews.html" class="green-button" data-i18="ReviewsButton" >Go to Target Page</a>
+
     </div>
     `
-  
     
   }
 };
