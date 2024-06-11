@@ -15,10 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const phoneInvalid = document.querySelector(".Phone__error");
   const phoneUnique = document.querySelector(".Phone__unique");
   const passwordInvalid = document.querySelector(".Password__error");
-  const passwordUnique = document.querySelector(".Password__unique");
   const passwordMatch = document.querySelector(".RePassword__error");
 
   const regButton = document.querySelector(".reg");
+
+  let emailTouched = false;
+  let phoneTouched = false;
+  let passwordTouched = false;
+  let repeatPasswordTouched = false;
+  let birthdayTouched = false;
+
   const commonPasswords = [
     "password",
     "123456",
@@ -120,6 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   function isEmailValid(email) {
+    if (!emailTouched || email === "") {
+      emailInvalid.classList.remove("open");
+      return false;
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/i;
     if (!emailRegex.test(email)) {
       emailInvalid.classList.add("open");
@@ -131,16 +142,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function isEmailUnique(email) {
+    if (!emailTouched || email === "") {
+      emailUnique.classList.remove("open");
+      return false;
+    }
+
     const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
     const isUnique = !storedUserData.some((user) => user.email === email);
     if (!isUnique) {
       emailUnique.classList.add("open");
+      return false;
     } else {
       emailUnique.classList.remove("open");
+      return true;
     }
     return isUnique;
   }
   function isPhoneValid(phone) {
+    if (!phoneTouched || phone === "") {
+      phoneInvalid.classList.remove("open");
+      return false;
+    }
+
     const phoneRegex = /^\+375\d{9}$/;
     if (!phoneRegex.test(phone)) {
       phoneInvalid.classList.add("open");
@@ -152,17 +175,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function isPhoneUnique(phone) {
+    if (!phoneTouched || phone === "") {
+      phoneUnique.classList.remove("open");
+      return false;
+    }
+
     const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
     const isUnique = !storedUserData.some((user) => user.phone === phone);
     if (!isUnique) {
       phoneUnique.classList.add("open");
+      return false;
     } else {
       phoneUnique.classList.remove("open");
+      return true;
     }
     return isUnique;
   }
 
   function isPasswordValid(password) {
+    if (!passwordTouched || password === "") {
+      passwordInvalid.classList.remove("open");
+      return false;
+    }
+
     const uppercaseRegex = /[A-Z]/;
     const lowercaseRegex = /[a-z]/;
     const digitRegex = /[0-9]/;
@@ -183,18 +218,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function isPasswordUnique(password) {
-    const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
-    const isUnique = !storedUserData.some((user) => user.password === password);
-    if (!isUnique) {
-      passwordUnique.classList.add("open");
-    } else {
-      passwordUnique.classList.remove("open");
-    }
-    return isUnique;
-  }
-
   function isPasswordsMatch(password, repeatPassword) {
+    if (!repeatPasswordTouched || repeatPassword === "") {
+      passwordMatch.classList.remove("open");
+      return false;
+    }
+
     if (password === repeatPassword) {
       passwordMatch.classList.remove("open");
       return true;
@@ -205,6 +234,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function isBirthdayValid(birthday) {
+    if (!birthdayTouched || birthday === "") {
+      birthdayInvalid.classList.remove("open");
+      return false;
+    }
+
     const birthdayDate = new Date(birthday);
     const today = new Date();
     const age = today.getFullYear() - birthdayDate.getFullYear();
@@ -231,7 +265,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const isPhoneValidFlag = isPhoneValid(phoneInput.value);
     const isPhoneUniqueFlag = isPhoneUnique(phoneInput.value);
     const isPasswordValidFlag = isPasswordValid(passwordInput.value);
-    const isPasswordUniqueFlag = isPasswordUnique(passwordInput.value);
     const isPasswordsMatchFlag = isPasswordsMatch(
       passwordInput.value,
       repeatPasswordInput.value
@@ -244,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
       isPhoneValidFlag &&
       isPhoneUniqueFlag &&
       isPasswordValidFlag &&
-      isPasswordUniqueFlag &&
       isPasswordsMatchFlag &&
       isBirthdayValidFlag
     );
@@ -275,29 +307,34 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   emailInput.addEventListener("input", function () {
+    emailTouched = true;
     isEmailValid(emailInput.value);
     isEmailUnique(emailInput.value);
     goToUser();
   });
 
   phoneInput.addEventListener("input", function () {
+    phoneTouched = true;
     isPhoneValid(phoneInput.value);
     isPhoneUnique(phoneInput.value);
     goToUser();
   });
 
   passwordInput.addEventListener("input", function () {
+    passwordTouched = true;
     isPasswordValid(passwordInput.value);
     isPasswordUnique(passwordInput.value);
     goToUser();
   });
 
   repeatPasswordInput.addEventListener("input", function () {
+    repeatPasswordTouched = true;
     isPasswordsMatch(passwordInput.value, repeatPasswordInput.value);
     goToUser();
   });
 
   birthdayInput.addEventListener("input", function () {
+    birthdayTouched = true;
     isBirthdayValid(birthdayInput.value);
     goToUser();
   });

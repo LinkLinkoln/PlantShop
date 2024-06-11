@@ -62,7 +62,6 @@ item.addEventListener('click', function(e) {
   modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
   modalElem.classList.add('active');
-  overlay.classList.add('active');
 });
 }); 
 
@@ -72,7 +71,6 @@ closeButtons.forEach(function(item){
       var parentModal = this.closest('.modal');
 
       parentModal.classList.remove('active');
-      overlay.classList.remove('active');
    });
 
 }); 
@@ -86,10 +84,7 @@ document.body.addEventListener('keyup', function (e) {
 }, false);
 
 
-overlay.addEventListener('click', function() {
-   document.querySelector('.modal.active').classList.remove('active');
-   this.classList.remove('active');
-});
+
 
 });
 

@@ -49,6 +49,7 @@ const i18Obj = {
     CustomerText: "Great Customer Service",
     OriginalPlantsText: "Origignal Plants",
     AffordablePriceText: "Affordable Price",
+    FeaturedPlantsText: "Featured Plants",
   },
   ru: {
     sliderText1: "Lorem Ipsum — это просто текст-пустышка 1",
@@ -100,6 +101,7 @@ const i18Obj = {
     CustomerText: "Отличная служба поддержки",
     OriginalPlantsText: "Оригинальный продукт",
     AffordablePriceText: "Доступные цены",
+    FeaturedPlantsText: "Доступные растения",
   }
 };
 

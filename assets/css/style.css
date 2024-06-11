@@ -79,13 +79,19 @@ body.dark-theme .cart{
 }
 body.dark-theme .mobile-menu {
   filter: invert(100%);
-
+}
+body.dark-theme .cookie-popup-content{
+  background-color: #111112;
 }
 body.dark-theme .choice-form{
   color: white;
   background-color: white;
 }
 body.dark-theme .mobile-nav.active{
+  color: #111112;
+  background-color: #111112; /* White */
+}
+body.dark-theme .mobile-nav{
   color: #111112;
   background-color: #111112; /* White */
 }
@@ -749,7 +755,7 @@ template {
 .mobile-nav {
   position: fixed;
   top: 60px;
-  right: 0;
+  right: 150px;
   bottom: 0;
   left: 0;
   background-color: #fff;
@@ -761,6 +767,7 @@ template {
 }
 .mobile-nav.active {
   transform: translateX(0);
+  right: 0px;
 }
 
 .mobile-nav__wrap {
@@ -1091,6 +1098,79 @@ template {
   padding: 0;
   cursor: pointer;
   margin-left: -9px;
+
+}
+@media (max-width: 1070px) {
+  .mobile-nav.active{
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+  .mobile-nav{
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .products-items {
+    flex-flow: wrap;
+  }
+  .product-item {
+    width: 47.619047619%;
+  }
+  .product-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .product-item__image img {
+    max-width: 100%;
+  }
+  .buy-plants-wrapper {
+    flex-flow: wrap;
+  }
+  .buy-plants-item {
+    width: 100%;
+  }
+  .buy-plants__title {
+    font-size: 22px;
+  }
+  .buy-plants__text {
+    font-size: 14px;
+  }
+  .buy-plants__top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .buy-plants-image img {
+    max-width: 100%;
+  }
+  .buy-plants__right {
+    text-align: start;
+  }
+  .plants-banner-wrap {
+    flex-flow: wrap;
+  }
+  .plants-banner__image img {
+    max-width: 100%;
+  }
+  .plants-banner__content {
+    margin-top: 15px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+  .plants-banner__title {
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .plants-banner__image {
+    text-align: center;
+    width: 100%;
+  }
 
 }
 
@@ -1907,6 +1987,11 @@ template {
     left: 0;
     right: 0;
     justify-content: center;
+
+  }
+  .slider__btn--text {
+    font-size: 10px;
+    margin-left: -20px;
   }
   .itc-slider-btn {
     width: 130px;
